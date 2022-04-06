@@ -116,6 +116,7 @@ public abstract class PlaylistDialog extends DialogFragment implements StateSave
         this.onDismissListener = onDismissListener;
     }
 
+    //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/7825
     protected void setStreamEntities(final List<StreamEntity> streamEntities) {
         this.streamEntities = streamEntities;
     }
@@ -124,6 +125,7 @@ public abstract class PlaylistDialog extends DialogFragment implements StateSave
     // Dialog creation
     //////////////////////////////////////////////////////////////////////////*/
 
+    //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/7825
     /**
      * Creates a {@link PlaylistAppendDialog} when playlists exists,
      * otherwise a {@link PlaylistCreationDialog}.

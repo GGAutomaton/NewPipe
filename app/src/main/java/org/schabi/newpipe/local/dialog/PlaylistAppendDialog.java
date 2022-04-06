@@ -33,6 +33,7 @@ public final class PlaylistAppendDialog extends PlaylistDialog {
 
     private final CompositeDisposable playlistDisposables = new CompositeDisposable();
 
+    //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/7825
     /**
      * Create a new instance of {@link PlaylistAppendDialog}.
      *
@@ -111,6 +112,7 @@ public final class PlaylistAppendDialog extends PlaylistDialog {
     // Helper
     //////////////////////////////////////////////////////////////////////////*/
 
+    //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/7825
     /** Display create playlist dialog. */
     public void openCreatePlaylistDialog() {
         if (getStreamEntities() == null || !isAdded()) {

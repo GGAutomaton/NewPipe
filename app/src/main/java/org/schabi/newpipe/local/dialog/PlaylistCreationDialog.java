@@ -22,6 +22,7 @@ import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 
 public final class PlaylistCreationDialog extends PlaylistDialog {
 
+    //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/7825
     /**
      * Create a new instance of {@link PlaylistCreationDialog}.
      *
