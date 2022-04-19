@@ -132,6 +132,8 @@ public class ChannelFragment extends BaseListInfoFragment<StreamInfoItem, Channe
     public void onViewCreated(@NonNull final View rootView, final Bundle savedInstanceState) {
         super.onViewCreated(rootView, savedInstanceState);
         channelBinding = FragmentChannelBinding.bind(rootView);
+
+        //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/6696
         if (channelContentNotSupported) {
             showContentNotSupported();
         }
@@ -529,6 +531,7 @@ public class ChannelFragment extends BaseListInfoFragment<StreamInfoItem, Channe
             playlistControlBinding.getRoot().setVisibility(View.GONE);
         }
 
+        //CS304 Issue link: https://github.com/TeamNewPipe/NewPipe/issues/6696
         channelContentNotSupported = false;
         for (final Throwable throwable : result.getErrors()) {
             if (throwable instanceof ContentNotSupportedException) {
